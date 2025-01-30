@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>JS Game</title>
+    <link rel="shortcut icon" href="/img/control-de-juego.png" type="image/x-icon">
+    <title>Juego con JS</title>
 </head>
 
 <body>
@@ -21,13 +22,13 @@
                     <h1></h1>
                     <p class="texto__parrafo"></p>
                 </div>
-                <input type="number" min="1" max="10" class="container__input">
+                <input id="numeroIngresado" type="number" min="1" max="10" class="container__input">
                 <div class="chute container__botones">
-                    <button class="container__boton">Intentar</button>
+                    <button onclick="verificarIntento();" class="container__boton">Intentar</button>
                     <button class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
                 </div>
             </div>
-            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+            <img src="./img/astro.png" class="container__imagen" style="width: 58%; height: 60%;" />
         </div>
     </div>
 
